@@ -1,0 +1,66 @@
+/* style.css */
+
+  body {
+  font-family: Arial, sans-serif;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* backdrop-filter: blur(4px); optional: makes text readable */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.player {
+  background: rgba(187, 182, 182, 0.1); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);  
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.volume {
+  margin-top: 10px;
+}
+
+.playlist {
+  margin-top: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.playlist li.active {
+  background-color: #555;
+}
